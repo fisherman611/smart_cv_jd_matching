@@ -1,8 +1,8 @@
 # SPEC — AI Product Hackathon
 
 **Nhóm:** Smart CV-JD Matching Team
-**Track:** ☐ VinFast · ☐ Vinmec · ☑ VinUni-VinSchool · ☐ XanhSM · ☐ Open
-**Problem statement (1 câu):** Nhà tuyển dụng mất hàng giờ đọc CV và chuẩn bị phỏng vấn thủ công — AI tự động phân tích CV, matching với JD, xếp hạng ứng viên và tạo câu hỏi phỏng vấn tùy chỉnh
+**Track:** ☐ VinFast · ☐ Vinmec · ☑ VinUni-VinSchool · ☐ XanhSM · ☐ Open \
+**Problem statement:** Nhà tuyển dụng mất hàng giờ đọc CV và chuẩn bị phỏng vấn thủ công — AI tự động phân tích CV, matching với JD, xếp hạng ứng viên và tạo câu hỏi phỏng vấn tùy chỉnh
 
 ---
 
@@ -14,14 +14,27 @@
 | **Trả lời** | HR/Recruiter mất 2-3 giờ/vị trí để đọc 50+ CV, matching thủ công, chuẩn bị câu hỏi phỏng vấn — AI tự động phân tích CV, tính matching score (keyword + semantic), xếp hạng top-N, phân tích sâu điểm mạnh/yếu, và tạo bộ câu hỏi phỏng vấn tùy chỉnh từ database nội bộ | AI matching sai → user xem chi tiết phân tích (skills, experience, summary), điều chỉnh top-N selection, hoặc chỉnh sửa câu hỏi phỏng vấn trước khi sử dụng | ~$0.05-0.10/CV (NVIDIA API), latency 3-5s/CV, 10-15s cho deep analysis. Risk: hallucinate skills không có trong CV, bias trong matching algorithm, câu hỏi phỏng vấn không phù hợp văn hóa công ty |
 
 **Automation hay augmentation?** ☐ Automation · ☑ Augmentation
+
 Justify: Augmentation — AI đề xuất top-N candidates với matching score, HR review và quyết định cuối cùng. Câu hỏi phỏng vấn được generate nhưng HR có thể chỉnh sửa trước khi sử dụng. Cost of reject thấp vì chỉ cần skip candidate hoặc edit questions.
 
 **Learning signal:**
 
-1. User correction đi vào đâu? Hiện tại chưa có feedback loop. Trong tương lai: HR chọn/bỏ candidate → log vào database để fine-tune matching weights
-2. Product thu signal gì để biết tốt lên hay tệ đi? Tracking: % candidates được chọn phỏng vấn từ top-N, % câu hỏi được giữ nguyên vs chỉnh sửa, thời gian HR dành cho review (giảm từ 2-3h xuống <30 phút)
-3. Data thuộc loại nào? ☑ Domain-specific · ☑ Human-judgment · ☐ User-specific · ☐ Real-time · ☐ Khác: ___
-   Có marginal value không? Có — CV và JD của công ty chứa domain knowledge (technical skills, role requirements) mà general LLM chưa tối ưu. Interview question database nội bộ phản ánh văn hóa và tiêu chuẩn riêng của công ty.
+1. **User correction đi vào đâu?** \
+Hiện tại chưa có feedback loop. Trong tương lai: HR chọn/bỏ candidate → log vào database để fine-tune matching weights
+
+2. **Product thu signal gì để biết tốt lên hay tệ đi?**
+
+      **Tracking:**
+    - % candidates được chọn phỏng vấn từ top-N (matching accuracy)
+    - % câu hỏi được giữ nguyên vs chỉnh sửa (question relevance)
+    - Thời gian HR dành cho review (target: giảm từ 2-3h xuống <30 phút)
+
+3. **Data thuộc loại nào?**
+
+  ☑ Domain-specific · ☑ Human-judgment · ☐ User-specific · ☐ Real-time · ☐ Khác
+
+  **Marginal value:** Có — CV và JD của công ty chứa domain knowledge (technical skills, role requirements) mà general LLM chưa tối ưu. Interview question database nội bộ phản ánh văn hóa và tiêu chuẩn riêng của công ty.
+
 
 ---
 
@@ -56,7 +69,9 @@ Mỗi feature chính = 1 bảng. AI trả lời xong → chuyện gì xảy ra?
 ## 3. Eval metrics + threshold
 
 **Optimize precision hay recall?** ☑ Precision · ☐ Recall
-Tại sao? Trong tuyển dụng, false positive (chọn sai người) tốn cost phỏng vấn và onboarding. False negative (bỏ sót người tốt) ít nguy hiểm hơn vì HR vẫn có thể review manually. Ưu tiên precision để đảm bảo top-N candidates chất lượng cao.
+
+**Tại sao?**\
+ Trong tuyển dụng, false positive (chọn sai người) tốn cost phỏng vấn và onboarding. False negative (bỏ sót người tốt) ít nguy hiểm hơn vì HR vẫn có thể review manually. Ưu tiên precision để đảm bảo top-N candidates chất lượng cao.
 Nếu sai ngược lại thì chuyện gì xảy ra? Nếu optimize recall → nhiều candidates không phù hợp vào top-N → HR mất thời gian review, giảm trust vào hệ thống → bỏ dùng
 
 | Metric | Threshold | Red flag (dừng khi) |
@@ -98,7 +113,7 @@ Nếu sai ngược lại thì chuyện gì xảy ra? Nếu optimize recall → n
 
 ---
 
-## 6. Mini AI spec (1 trang)
+## 6. Mini AI spec
 
 **Product Overview:**
 Smart CV-JD Matching là hệ thống AI hỗ trợ nhà tuyển dụng (HR/Recruiter) tự động hóa quy trình screening CV và chuẩn bị phỏng vấn. Thay vì đọc thủ công 50+ CVs và mất 2-3 giờ/vị trí, HR chỉ cần upload JD và batch CVs, hệ thống sẽ:
@@ -134,21 +149,21 @@ Smart CV-JD Matching là hệ thống AI hỗ trợ nhà tuyển dụng (HR/Recr
   - Semantic matching: Hash embedding (local, no API cost) cho summary similarity
   - Weighted blending: Required skills 70%, Preferred skills 20%, Semantic 10%
 
-**Key Risks & Mitigations:**
-1. Keyword stuffing → Add experience validation, semantic analysis
-2. Terminology mismatch → Skill synonym dictionary (expandable)
-3. Hallucination → Structured output + Pydantic validation + UI shows raw CV for cross-check
-4. Bias → Future: Blind mode (hide name, gender indicators), fairness metrics
+**Rủi ro chính & Giải pháp:**
+1. Lạm dụng từ khóa → Thêm xác thực kinh nghiệm, phân tích ngữ nghĩa
+2. Khác biệt thuật ngữ → Từ điển đồng nghĩa kỹ năng (mở rộng liên tục)
+3. Ảo tưởng AI → Structured output + Pydantic validation + UI hiển thị CV gốc để HR kiểm tra chéo
+4. Thiên vị → Tương lai: Chế độ ẩn danh (ẩn tên, chỉ báo giới tính), metrics công bằng
 
-**Data Flywheel (Future):**
-- HR selections → Log chosen candidates → Fine-tune matching weights
-- Edited questions → Enrich question database → Improve generation quality
-- Domain-specific data (company's CV/JD patterns) → Marginal value over general LLM
+**Vòng phản hồi dữ liệu (Tương lai):**
+- Lựa chọn HR → Ghi nhật ký ứng viên được chọn → Tinh chỉnh trọng số matching
+- Câu hỏi được chỉnh sửa → Làm giàu cơ sở dữ liệu câu hỏi → Cải thiện chất lượng generation
+- Dữ liệu lĩnh vực (mẫu CV/JD của công ty) → Giá trị cộng thêm so với LLM chung
 
-**Cost & Latency:**
-- ~$0.05-0.10/CV (NVIDIA API)
+**Chi phí & Độ trễ:**
+- ~$0,05-0,10/CV (NVIDIA API)
 - 3-5s/CV analysis, 10-15s deep analysis + question generation
-- Target: Process 50 CVs in <5 minutes
+- Mục tiêu: Xử lý 50 CVs trong <5 phút
 
 **Success Metrics:**
 - Time saved: 75% reduction (từ 2-3h xuống <30 phút)
