@@ -1,0 +1,42 @@
+HO SO UNG VIEN
+Ho ten: Le Thao Nguyen
+Email: nguyen.le.qa@gmail.com
+So dien thoai: 0909554433
+Vi tri ung tuyen: Giang vien AI
+
+Tom tat:
+Ung vien chuyen ve kiem thu phan mem thu cong cho ung dung web va mobile.
+Da tham gia viet test case va thuc hien regression test cho nhieu du an.
+Chua co kinh nghiem giang day hoc thuat.
+
+Kinh nghiem tong: 5 nam
+
+Ky nang ky thuat:
+- Manual Testing
+- Test Case Design
+- Jira
+- Postman
+- SQL co ban
+
+Ky nang mem:
+- Can than
+- Giao tiep noi bo
+- Lam viec theo quy trinh
+- Quan ly deadline
+
+Kinh nghiem lam viec:
+- Cong ty SoftCheck
+  Thoi gian: 2021 - hien tai
+  Vai tro: QA Engineer
+  Mo ta:
+  + Thuc hien test chuc nang cho he thong CRM.
+  + Bao cao loi va theo doi fix tren Jira.
+
+- Cong ty Mobile Plus
+  Thoi gian: 2019 - 2021
+  Vai tro: Tester
+  Mo ta:
+  + Kiem thu app mobile tren Android va iOS.
+
+Hoc van:
+- Cu nhan He thong thong tin, Dai hoc Cong nghe Sai Gon, 2019

@@ -1,0 +1,60 @@
+HO SO UNG VIEN
+Ho ten: Le Quang Vinh
+Email: vinh.le.ai@gmail.com
+So dien thoai: 0936123987
+Vi tri ung tuyen: Giang vien Cao cap AI
+
+Tom tat:
+Ung vien co kinh nghiem giang day va nghien cuu AI trong moi truong dai hoc quoc te.
+Tap trung vao model Transformer, hoc sau va ung dung thi giac may tinh trong y te.
+Co kha nang ket noi doanh nghiep de dua bai toan thuc te vao lop hoc.
+
+Kinh nghiem tong: 11 nam
+
+Ky nang ky thuat:
+- Python
+- PyTorch
+- TensorFlow
+- CNN
+- RNN/GRU
+- Transformers
+- Reinforcement Learning
+- Computer Vision
+- NLP
+
+Ky nang mem:
+- Truyen cam hung hoc thuat
+- Co van sinh vien nghien cuu
+- Viet de xuat de tai
+- Giao tiep tieng Anh chuyen nganh
+
+Kinh nghiem lam viec:
+- Truong Dai hoc Quoc te, DHQG TP.HCM
+  Thoi gian: 2019 - hien tai
+  Vai tro: Pho giao su, Giang vien AI
+  Mo ta:
+  + Giang day AI, Deep Learning va NLP cho chuong trinh dai hoc va cao hoc.
+  + Huong dan nhom sinh vien nghien cuu ve segmentation trong chan doan hinh anh.
+  + Chu tri xay dung hoc phan "Transformer for Vision and Language".
+
+- VinAI Research (du an hop tac)
+  Thoi gian: 2016 - 2019
+  Vai tro: Nghien cuu vien
+  Mo ta:
+  + Phat trien pipeline huan luyen mo hinh CNN/Transformer tren du lieu lon.
+  + Trien khai giai phap nhan dien loi san pham cho nha may.
+
+- Truong Dai hoc Khoa hoc Tu nhien TP.HCM
+  Thoi gian: 2013 - 2016
+  Vai tro: Giang vien
+  Mo ta:
+  + Day mon Machine Learning va Python for AI.
+
+Hoc van:
+- Tien si Computer Science (AI track), Korea Advanced Institute of Science and Technology, 2018
+- Thac si Khoa hoc may tinh, Dai hoc Khoa hoc Tu nhien TP.HCM, 2012
+
+Cong bo khoa hoc:
+- 01 bai bao tai NeurIPS (2023)
+- 01 bai bao tai CVPR (2021)
+- 01 bai bao tai ICML (2020)

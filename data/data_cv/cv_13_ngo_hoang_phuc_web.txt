@@ -1,0 +1,43 @@
+HO SO UNG VIEN
+Ho ten: Ngo Hoang Phuc
+Email: phuc.ngo.web@gmail.com
+So dien thoai: 0988776655
+Vi tri ung tuyen: Giang vien AI
+
+Tom tat:
+Ung vien la lap trinh vien web fullstack, tap trung phat trien website thuong mai dien tu.
+Co mot it kien thuc Python co ban nhung chua lam du an AI.
+Muc tieu la tim moi truong giao duc on dinh.
+
+Kinh nghiem tong: 2 nam
+
+Ky nang ky thuat:
+- HTML/CSS
+- JavaScript
+- ReactJS
+- NodeJS
+- MongoDB
+- Docker co ban
+
+Ky nang mem:
+- Tu hoc
+- Lam viec nhom
+- Bao cao cong viec
+- Ho tro khach hang
+
+Kinh nghiem lam viec:
+- Cong ty WebNova
+  Thoi gian: 2024 - hien tai
+  Vai tro: Fullstack Developer
+  Mo ta:
+  + Xay dung giao dien va API cho website ban hang.
+  + Bao tri he thong va sua loi production.
+
+- Cong ty Startup Box
+  Thoi gian: 2023 - 2024
+  Vai tro: Frontend Intern
+  Mo ta:
+  + Phat trien component React va toi uu hieu nang giao dien.
+
+Hoc van:
+- Cu nhan Cong nghe thong tin, Dai hoc Mo TP.HCM, 2023

@@ -1,0 +1,59 @@
+HO SO UNG VIEN
+Ho ten: Tran Khanh Duong
+Email: duong.tran.ai@gmail.com
+So dien thoai: 0978123099
+Vi tri ung tuyen: Giang vien Cao cap AI
+
+Tom tat:
+Ung vien co hon 8 nam kinh nghiem nghien cuu va giang day AI, dac biet trong linh vuc hoc sau va RL.
+Da tham gia xay dung chuong trinh dao tao AI gan voi bai toan doanh nghiep.
+Co dinh huong phat trien nhom nghien cuu manh va tang so luong cong bo quoc te cho khoa.
+
+Kinh nghiem tong: 8 nam
+
+Ky nang ky thuat:
+- Python
+- PyTorch
+- TensorFlow
+- CNN
+- RNN
+- Transformers
+- Reinforcement Learning
+- Computer Vision
+- Cloud GPU Training
+
+Ky nang mem:
+- Day hoc theo du an
+- Co van startup cong nghe
+- Quan ly nhom nghien cuu
+- Doc va viet bai bao tieng Anh
+
+Kinh nghiem lam viec:
+- Truong Dai hoc Cong nghe TP.HCM
+  Thoi gian: 2021 - hien tai
+  Vai tro: Giang vien Cao cap AI
+  Mo ta:
+  + Day hoc phan AI nang cao, Deep Learning va Reinforcement Learning.
+  + Huong dan do an tot nghiep ve object detection, tracking va recommendation.
+  + To chuc seminar cap nhat cong nghe AI moi cho giang vien va sinh vien.
+
+- Cong ty AI Solutions Vietnam
+  Thoi gian: 2018 - 2021
+  Vai tro: Senior AI Engineer
+  Mo ta:
+  + Trien khai he thong nhan dien hinh anh cho ban le va logistics.
+  + Xay dung mo hinh Transformer cho bai toan phan tich van ban khach hang.
+
+- Phong thi nghiem AI, Dai hoc Da Nang
+  Thoi gian: 2016 - 2018
+  Vai tro: Nghien cuu vien
+  Mo ta:
+  + Tham gia de tai ve hoc tang cuong va toi uu chinh sach.
+
+Hoc van:
+- Tien si Tri tue nhan tao, Dai hoc Da Nang, 2021
+- Thac si Khoa hoc may tinh, Dai hoc Da Nang, 2016
+
+Cong bo khoa hoc:
+- 01 bai bao tai ICML workshop (2024)
+- 01 bai bao tai CVPR workshop (2022)
