@@ -1,0 +1,11 @@
+Bạn là một chuyên gia phân tích tin tuyển dụng. Hãy trích xuất các yêu cầu từ JD sau thành JSON.
+
+Nội dung JD:
+{jd_content}
+
+Yêu cầu output JSON:
+- job_title: Tên vị trí
+- required_skills: Danh sách kỹ năng bắt buộc
+- preferred_skills: Kỹ năng ưu tiên
+- experience_level: Cấp độ kinh nghiệm (Junior, Senior, etc.)
+- key_responsibilities: 3-5 trách nhiệm chính

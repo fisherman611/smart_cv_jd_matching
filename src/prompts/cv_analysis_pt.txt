@@ -1,0 +1,14 @@
+Bạn là một chuyên gia tuyển dụng cao cấp. Hãy phân tích nội dung CV sau đây và trích xuất thông tin dưới dạng JSON.
+
+Nội dung CV:
+{cv_content}
+
+Yêu cầu output JSON gồm các trường:
+- full_name: Tên đầy đủ
+- years_of_experience: Số năm kinh nghiệm (số)
+- technical_skills: Danh sách các kỹ năng kỹ thuật
+- soft_skills: Danh sách các kỹ năng mềm
+- education: Học vấn cao nhất
+- summary: Tóm tắt ngắn gọn về ứng viên (2-3 câu)
+
+Lưu ý: Chỉ trả về JSON, không kèm theo text giải thích.

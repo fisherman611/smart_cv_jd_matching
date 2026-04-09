@@ -1,0 +1,9 @@
+openai
+python-dotenv
+pandas
+pydantic
+streamlit
+fastapi
+uvicorn
+PyPDF2
+python-docx
