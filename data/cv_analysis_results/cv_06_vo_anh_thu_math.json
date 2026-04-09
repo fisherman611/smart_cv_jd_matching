@@ -2,19 +2,16 @@
   "full_name": "Vo Anh Thu",
   "years_of_experience": 4.0,
   "technical_skills": [
-    "Toán cao cấp",
-    "Xác suất thống kê",
-    "Tối ưu hóa",
-    "Excel",
-    "Python cơ bản",
-    "LaTeX"
+    "Python",
+    "LaTeX",
+    "Excel"
   ],
   "soft_skills": [
-    "Giao tiếp sâu phạm",
+    "Giao tiếp xã phạm",
     "Tổ chức học liệu",
     "Làm việc nhóm",
     "Chủ động"
   ],
-  "education": "Thạc sĩ Toán ứng dụng, Đại học Kinh tế TP.HCM, 2021",
-  "summary": "Ứng viên có kinh nghiệm giảng dạy Toán đại cương và Toán kinh tế, xây dựng tài liệu học tập và bài tập đánh giá. Đã giảng dạy Toán cao cấp và xác suất thống kê cho sinh viên năm nhất. Mong muốn đóng góp vào đào tạo Toán theo hướng ứng dụng."
+  "education": "Thạc sĩ Toán ứng dụng, Đại học Kinh tế TP.HCM",
+  "summary": "Ứng viên có 4 năm kinh nghiệm giảng dạy Toán cấp cao và sử dụng Python cơ bản, LaTeX, Excel. Tuy nhiên, CV không đề cập đến kinh nghiệm AI, các framework như PyTorch/TensorFlow hay công bố quốc tế, nên không đáp ứng yêu cầu Senior AI Instructor."
 }

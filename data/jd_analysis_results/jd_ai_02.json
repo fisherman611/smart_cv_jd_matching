@@ -1,20 +1,20 @@
 {
   "job_title": "Giảng viên AI & Machine Learning",
-  "required_skills": [
-    "Kinh nghiệm làm việc với thư viện Scikit-learn",
-    "Kinh nghiệm làm việc với thư viện Keras",
-    "Kinh nghiệm làm việc với thư viện HuggingFace"
+  "years_of_experience": 2.0,
+  "technical_skills": [
+    "Scikit-learn",
+    "Keras",
+    "HuggingFace",
+    "AWS",
+    "GCP",
+    "Docker",
+    "Kubernetes",
+    "MLOps"
   ],
-  "preferred_skills": [
-    "Biết sử dụng Docker và Kubernetes",
-    "Có kinh nghiệm về MLOps",
-    "Kỹ năng giao tiếp và trình bày xuất sắc",
-    "Có chứng chỉ về AI/Data Science từ các tổ chức uy tín"
+  "soft_skills": [
+    "Giao tiếp",
+    "Trình bày"
   ],
-  "experience_level": "Junior/Middle",
-  "key_responsibilities": [
-    "Giảng dạy các môn học cơ sở về Machine Learning và Xử lý ngôn ngữ tự nhiên (NLP)",
-    "Xây dựng hệ thống bài tập thực hành trên nền tảng Cloud (AWS/GCP)",
-    "Tổ chức các buổi workshop chia sẻ kiến thức về AI cho sinh viên và cộng đồng"
-  ]
+  "education": "Thạc sĩ CNTT hoặc Toán tin",
+  "summary": "Giảng viên sẽ giảng dạy các môn Machine Learning và NLP, xây dựng hệ thống bài tập thực hành trên nền tảng Cloud (AWS/GCP), và tổ chức workshop chia sẻ kiến thức AI cho sinh viên và cộng đồng. Yêu cầu có kinh nghiệm với Scikit-learn, Keras, HuggingFace và kiến thức về MLOps, Docker, Kubernetes."
 }

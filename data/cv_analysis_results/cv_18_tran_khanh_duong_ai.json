@@ -1,0 +1,23 @@
+{
+  "full_name": "Tran Khanh Duong",
+  "years_of_experience": 8.0,
+  "technical_skills": [
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "CNN",
+    "RNN",
+    "Transformers",
+    "Reinforcement Learning",
+    "Computer Vision",
+    "Cloud GPU Training"
+  ],
+  "soft_skills": [
+    "Day hoc theo du an",
+    "Co van startup cong nghe",
+    "Quan ly nhom nghien cuu",
+    "Doc va viet bai bao tieng Anh"
+  ],
+  "education": "Tiến sĩ Trí tuệ nhân tạo, Đại học Đà Nẵng",
+  "summary": "Trần Khánh Dương là giảng viên cao cấp AI với hơn 8 năm kinh nghiệm nghiên cứu và giảng dạy trong lĩnh vực Deep Learning, Reinforcement Learning và Computer Vision. Anh đã hướng dẫn nhiều đồ án tốt nghiệp, triển khai các dự án AI thực tiễn và công bố bài báo tại các hội nghị quốc tế như ICML và CVPR. Ngoài ra, anh có khả năng đọc hiểu và viết tài liệu chuyên ngành bằng tiếng Anh."
+}

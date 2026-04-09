@@ -24,10 +24,11 @@ class JDAnalysis(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
     job_title: str = Field(default="")
-    required_skills: List[str] = Field(default_factory=list)
-    preferred_skills: List[str] = Field(default_factory=list)
-    experience_level: str = Field(default="")
-    key_responsibilities: List[str] = Field(default_factory=list)
+    years_of_experience: float = Field(default=0)
+    technical_skills: List[str] = Field(default_factory=list)
+    soft_skills: List[str] = Field(default_factory=list)
+    education: str = Field(default="")
+    summary: str = Field(default="")
 
 class JDAnalyzer:
     def __init__(self, llm_service: Optional[LLMService] = None):

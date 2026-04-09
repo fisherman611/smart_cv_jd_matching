@@ -1,21 +1,21 @@
 {
-  "full_name": "Luu Khanh An",
+  "full_name": "Lưu Khánh An",
   "years_of_experience": 8.0,
   "technical_skills": [
-    "Operating Systems",
-    "Computer Networks",
+    "Python",
     "C",
     "C++",
-    "Python",
+    "Operating Systems",
+    "Computer Networks",
     "Linux",
     "Bash"
   ],
   "soft_skills": [
-    "Su pham",
-    "Quan tri hoc phan",
-    "Huong dan do an",
-    "Ky luat"
+    "Sự phấn",
+    "Quản trị học phần",
+    "Hướng dẫn đồ án",
+    "Kỹ luật"
   ],
-  "education": "Thạc sĩ Kỹ thuật máy tính, Đại học Bách Khoa TP.HCM, 2016",
-  "summary": "Giảng viên Computer Science với 8 năm kinh nghiệm trong việc giảng dạy hệ điều hành, phần cứng và lập trình hệ thống. Có kinh nghiệm phát triển bài lab thực hành và hướng dẫn sinh viên thực hiện dự án hệ thống. Được đánh giá là người đào tạo năng lực và năng lực nghiên cứu tài liệu."
+  "education": "Thạc sĩ Kỹ thuật máy tính",
+  "summary": "Lưu Khánh An là giảng viên CS với 8 năm kinh nghiệm, chuyên môn Python, C/C++, Linux và đã xây dựng lab, giảng dạy các môn lập trình. Tuy nhiên, CV không ghi rõ kinh nghiệm AI chuyên sâu hoặc giảng dạy AI, nên chưa đáp ứng đầy đủ yêu cầu Senior AI Instructor."
 }

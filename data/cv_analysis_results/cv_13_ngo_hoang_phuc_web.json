@@ -1,0 +1,21 @@
+{
+  "full_name": "Ngo Hoang Phuc",
+  "years_of_experience": 2.0,
+  "technical_skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "ReactJS",
+    "NodeJS",
+    "MongoDB",
+    "Docker",
+    "Python"
+  ],
+  "soft_skills": [
+    "Tu hoc",
+    "Lam viec nhom",
+    "Bao cao cong viec",
+    "Ho tro khach hang"
+  ],
+  "education": "Cụ nhận Công nghệ thợ tin, Dái hệc Mộ Độ TP.HCM, 2023",
+  "summary": "Ứng viên là lập trình viên web fullstack với 2 năm kinh nghiệm, chuyên môn chủ yếu là HTML/CSS, JavaScript, ReactJS, NodeJS, MongoDB và Docker. Anh có kiến thức cơ bản về Python và mong muốn phát triển trong môi trường giáo dục trực tuyến."
+}

@@ -39,4 +39,4 @@ Trả về duy nhất một JSON object với cấu trúc sau:
   "summary": "Tóm tắt ngắn gọn 2-3 câu"
 }}
 
-LƯU Ý: Chỉ trả về mã JSON hợp lệ. Không lời chào, không giải thích, không markdown.
+LƯU Ý: Chỉ trả về mã JSON hợp lệ. Không lời chào, không giải thích, không markdown. Câu trả lời phải là tiếng Việt có dấu.

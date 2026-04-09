@@ -1,0 +1,23 @@
+{
+  "full_name": "Le Quang Vinh",
+  "years_of_experience": 11.0,
+  "technical_skills": [
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "CNN",
+    "RNN/GRU",
+    "Transformers",
+    "Reinforcement Learning",
+    "Computer Vision",
+    "NLP"
+  ],
+  "soft_skills": [
+    "Truyen cam hung hoc thuat",
+    "Co van sinh vien nghien cuu",
+    "Viet de xuat de tai",
+    "Giao tiep tieng Anh chuyen nganh"
+  ],
+  "education": "Tiến sĩ Computer Science (AI track)",
+  "summary": "Le Quang Vinh là giảng viên AI với hơn 11 năm kinh nghiệm trong nghiên cứu và giảng dạy, chuyên sâu về mô hình Transformer và ứng dụng trong y tế. Anh đã giảng dạy tại các trường đại học quốc tế, hướng dẫn nhóm sinh viên nghiên cứu và triển khai các dự án AI thực tế. Ngoài ra, anh đã công bố nhiều bài báo tại NeurIPS, CVPR và ICML, và có khả năng đọc hiểu tài liệu chuyên ngành tiếng Anh."
+}

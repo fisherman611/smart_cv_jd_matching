@@ -2,12 +2,11 @@
   "full_name": "Le Minh Khoi",
   "years_of_experience": 9.0,
   "technical_skills": [
-    "Giai tich",
-    "Dai so tuyen tinh",
-    "Xac suat thong ke",
-    "Toan ung dung",
     "Matlab",
-    "LaTeX"
+    "LaTeX",
+    "Analysis",
+    "Statistics",
+    "Probability"
   ],
   "soft_skills": [
     "Tu duy logic",
@@ -15,6 +14,6 @@
     "Huong dan sinh vien",
     "Quan ly hoc phan"
   ],
-  "education": "Thac si Toan giai tich, Dai hoc Khoa hoc Tu nhien TP.HCM, 2012",
-  "summary": "Le Minh Khoi has 9 years of experience as a senior mathematics lecturer, specializing in advanced analysis, statistics, and applied mathematics. He excels at integrating theoretical concepts with real-world applications and prefers interactive, logic-based teaching methods. His strong analytical and mentoring skills make him a valuable asset for academic and research environments."
+  "education": "Tiến sĩ Toán giải tích, Đại học Khoa học Tự nhiên TP.HCM",
+  "summary": "Ứng viên có 9 năm kinh nghiệm giảng dạy Toán cao cấp, chuyên môn sâu về phân tích, thống kê và xác suất. Hiện tại chưa có kinh nghiệm thực tiễn trong lĩnh vực AI hoặc giảng dạy các công nghệ AI như Python, PyTorch, TensorFlow. Do đó, ứng viên không đáp ứng đầy đủ yêu cầu của vị trí Giảng viên Cao cấp Trí tuệ Nhân tạo."
 }

@@ -1,0 +1,23 @@
+{
+  "full_name": "Nguyễn Hải Anh",
+  "years_of_experience": 9.0,
+  "technical_skills": [
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "CNN",
+    "RNN/LSTM",
+    "Transformers",
+    "Reinforcement Learning",
+    "Computer Vision",
+    "MLOps"
+  ],
+  "soft_skills": [
+    "Sư phạm đại học",
+    "Hướng dẫn nghiên cứu",
+    "Trình bày học thuật bằng tiếng Anh",
+    "Cố vấn khối nghiệp"
+  ],
+  "education": "Thạc sĩ Khoa học máy tính, Đại học Bách Khoa Hà Nội",
+  "summary": "Nguyễn Hải Anh có hơn 9 năm kinh nghiệm trong lĩnh vực AI, đặc biệt là Deep Learning và Reinforcement Learning. Ông đã giảng dạy tại Trường Đại học Bách Khoa Hà Nội, hướng dẫn hơn 25 dự án tốt nghiệp và công bố bài báo tại CVPR và ICML. Với kỹ năng thực thi mô hình CNN, Transformer và triển khai dự án công nghiệp, anh phù hợp với vị trí Giảng viên Cao cấp AI."
+}

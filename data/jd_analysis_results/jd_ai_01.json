@@ -1,25 +1,23 @@
 {
   "job_title": "Giảng viên Cao cấp Trí tuệ Nhân tạo (Senior AI Instructor)",
-  "required_skills": [
+  "years_of_experience": 5.0,
+  "technical_skills": [
     "Python",
-    "PyTorch/TensorFlow",
+    "PyTorch",
+    "TensorFlow",
     "CNN",
     "RNN",
     "Transformers",
-    "Reading comprehension of technical English documents"
+    "Deep Learning",
+    "Reinforcement Learning",
+    "Computer Vision"
   ],
-  "preferred_skills": [
-    "Experience implementing AI projects in industry",
-    "Strong pedagogical skills",
-    "Ability to inspire and motivate students",
-    "Publications in reputable conferences/journals (e.g., NIPS, ICML, CVPR)"
+  "soft_skills": [
+    "Kỹ năng sư phạm tốt",
+    "Khả năng truyền cảm hứng",
+    "Khả năng đọc hiểu tài liệu tiếng Anh chuyên ngành tốt",
+    "Kỹ năng tư vấn"
   ],
-  "experience_level": "Senior",
-  "key_responsibilities": [
-    "Design and deliver advanced training programs in AI, Deep Learning, and Reinforcement Learning.",
-    "Guide students in research projects and graduation theses, especially in computer vision.",
-    "Regularly update curricula to reflect the latest industry advancements.",
-    "Participate in scientific research and publish international papers.",
-    "Advise technology startup teams within the university."
-  ]
+  "education": "Tiến sĩ chuyên ngành AI, Computer Science hoặc các lĩnh vực liên quan",
+  "summary": "Giảng viên cao cấp sẽ thiết kế và giảng dạy các chương trình đào tạo chuyên sâu về AI, Deep Learning và Reinforcement Learning, hướng dẫn sinh viên thực hiện dự án nghiên cứu trong lĩnh vực thị giác máy tính. Ngoài ra, họ sẽ cập nhật giáo trình, tham gia nghiên cứu khoa học, công bố bài báo quốc tế và tư vấn cho các nhóm khởi nghiệp công nghệ."
 }
