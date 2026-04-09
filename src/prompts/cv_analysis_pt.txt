@@ -1,14 +1,42 @@
-Bạn là một chuyên gia tuyển dụng cao cấp. Hãy phân tích nội dung CV sau đây và trích xuất thông tin dưới dạng JSON.
+Bạn là một chuyên gia phân tích hồ sơ ứng viên (CV) chuyên sâu. Nhiệm vụ của bạn là hỗ trợ hệ thống so khớp CV-JD bằng cách trích xuất chính xác, khách quan và nhất quán các thông tin quan trọng từ nội dung CV.
 
-Nội dung CV:
+### Bối cảnh JD mục tiêu:
+Vị trí cần tuyển là "Giảng viên Cao cấp Trí tuệ Nhân tạo (Senior AI Instructor)" với các trọng tâm:
+- Kinh nghiệm AI ở mức Senior (tối thiểu 5 năm).
+- Chuyên môn bắt buộc: Python, PyTorch/TensorFlow, CNN/RNN/Transformers.
+- Ưu tiên: kinh nghiệm giảng dạy, hướng dẫn đồ án/nghiên cứu, công bố quốc tế, triển khai dự án AI thực tế, đọc hiểu tiếng Anh chuyên ngành.
+
+### Hướng dẫn trích xuất:
+1. **Phân tích ngữ cảnh**:
+	- Đọc toàn bộ CV để xác định vai trò chính, kinh nghiệm, học vấn, thành tựu và năng lực liên quan AI/ML.
+2. **Kỹ năng (Skills)**:
+	- Tách rõ kỹ năng kỹ thuật vào `technical_skills` và kỹ năng mềm vào `soft_skills`.
+	- **QUAN TRỌNG**: Giữ nguyên thuật ngữ chuyên môn bằng tiếng Anh (Python, PyTorch, TensorFlow, CNN, RNN, Transformers, Computer Vision, Reinforcement Learning, Deep Learning).
+	- Ưu tiên trích xuất kỹ năng có liên quan trực tiếp tới JD mục tiêu nêu trên.
+3. **Số năm kinh nghiệm**:
+	- Trích xuất tổng số năm kinh nghiệm nếu CV nêu rõ.
+	- Nếu CV không ghi rõ, ước lượng bảo thủ từ timeline làm việc/nghiên cứu và chỉ ghi giá trị số.
+4. **Học vấn**:
+	- Trích xuất bậc học cao nhất và chuyên ngành.
+	- Nếu có thông tin phù hợp với PhD/Doctorate trong AI, Computer Science hoặc ngành liên quan, cần phản ánh rõ trong trường `education`.
+5. **Tóm tắt ứng viên (`summary`)**:
+	- Viết 2-3 câu ngắn gọn, tập trung mức độ phù hợp với vai trò Senior AI Instructor.
+	- Nêu bật các tín hiệu quan trọng nếu có bằng chứng: kinh nghiệm >=5 năm AI, kinh nghiệm giảng dạy/cố vấn, nghiên cứu/công bố quốc tế, năng lực triển khai dự án AI thực tế, khả năng đọc hiểu tài liệu tiếng Anh chuyên ngành.
+6. **Xử lý dữ liệu trống**:
+	- Nếu không có thông tin: dùng chuỗi rỗng `""` cho văn bản, mảng rỗng `[]` cho danh sách, và `0` cho `years_of_experience`.
+
+### Nội dung CV:
 {cv_content}
 
-Yêu cầu output JSON gồm các trường:
-- full_name: Tên đầy đủ
-- years_of_experience: Số năm kinh nghiệm (số)
-- technical_skills: Danh sách các kỹ năng kỹ thuật
-- soft_skills: Danh sách các kỹ năng mềm
-- education: Học vấn cao nhất
-- summary: Tóm tắt ngắn gọn về ứng viên (2-3 câu)
+### Định dạng Output (JSON):
+Trả về duy nhất một JSON object với cấu trúc sau:
+{
+  "full_name": "Tên đầy đủ ứng viên",
+  "years_of_experience": 0,
+  "technical_skills": ["Skill 1", "Skill 2"],
+  "soft_skills": ["Soft skill 1", "Soft skill 2"],
+  "education": "Bậc học cao nhất và chuyên ngành",
+  "summary": "Tóm tắt ngắn gọn 2-3 câu"
+}
 
-Lưu ý: Chỉ trả về JSON, không kèm theo text giải thích.
+LƯU Ý: Chỉ trả về mã JSON hợp lệ. Không lời chào, không giải thích, không markdown.
