@@ -1,7 +1,143 @@
 import logging
-from typing import Any, Dict, List
+import math
+import os
+import re
+from difflib import SequenceMatcher
+from typing import Any, Callable, Dict, List, Optional, Sequence
 
 logger = logging.getLogger(__name__)
+
+_SKILL_SYNONYMS = {
+    "ml": "machine learning",
+    "machine-learning": "machine learning",
+    "ai": "artificial intelligence",
+    "dl": "deep learning",
+    "nlp": "natural language processing",
+    "cv": "computer vision",
+    "js": "javascript",
+    "ts": "typescript",
+    "pytorch/tensorflow": "pytorch tensorflow",
+    "tf": "tensorflow",
+    "k8s": "kubernetes",
+    "db": "database",
+}
+
+
+def _normalize_skill_text(text: Any) -> str:
+    if text is None:
+        return ""
+    normalized = str(text).lower().strip()
+    normalized = normalized.replace("&", " and ")
+    normalized = normalized.replace("/", " ")
+    normalized = re.sub(r"[^a-z0-9\s+.-]", " ", normalized)
+    normalized = re.sub(r"\s+", " ", normalized).strip()
+    return _SKILL_SYNONYMS.get(normalized, normalized)
+
+
+def _normalize_skill_list(raw_values: Any) -> List[str]:
+    if raw_values is None:
+        return []
+    if not isinstance(raw_values, list):
+        raw_values = [raw_values]
+
+    cleaned = []
+    for item in raw_values:
+        value = _normalize_skill_text(item)
+        if value:
+            cleaned.append(value)
+    return cleaned
+
+
+def _tokenize_skill(text: str) -> set:
+    return set(token for token in text.split() if token)
+
+
+def _skill_similarity(skill_a: str, skill_b: str) -> float:
+    if not skill_a or not skill_b:
+        return 0.0
+    if skill_a == skill_b:
+        return 1.0
+
+    tokens_a = _tokenize_skill(skill_a)
+    tokens_b = _tokenize_skill(skill_b)
+    if not tokens_a or not tokens_b:
+        return 0.0
+
+    intersection = len(tokens_a.intersection(tokens_b))
+    union = len(tokens_a.union(tokens_b))
+    jaccard = intersection / union if union else 0.0
+    seq_ratio = SequenceMatcher(None, skill_a, skill_b).ratio()
+
+    return max(jaccard, seq_ratio * 0.7)
+
+
+def _coverage_score(jd_skills: Sequence[str], cv_skills: Sequence[str], threshold: float = 0.55) -> float:
+    if not jd_skills:
+        return 0.0
+    if not cv_skills:
+        return 0.0
+
+    best_matches = []
+    for jd_skill in jd_skills:
+        best = max((_skill_similarity(jd_skill, cv_skill) for cv_skill in cv_skills), default=0.0)
+        # Clamp noisy fuzzy matches below threshold.
+        best_matches.append(best if best >= threshold else 0.0)
+
+    return sum(best_matches) / len(jd_skills)
+
+
+def _hash_embedding(text: str, dim: int = 256) -> List[float]:
+    vector = [0.0] * dim
+    for token in re.findall(r"[a-z0-9+#.]+", text.lower()):
+        idx = hash(token) % dim
+        vector[idx] += 1.0
+    return vector
+
+
+def _cosine_similarity(vec_a: Sequence[float], vec_b: Sequence[float]) -> float:
+    if not vec_a or not vec_b:
+        return 0.0
+
+    dot = sum(a * b for a, b in zip(vec_a, vec_b))
+    norm_a = math.sqrt(sum(a * a for a in vec_a))
+    norm_b = math.sqrt(sum(b * b for b in vec_b))
+    if norm_a == 0 or norm_b == 0:
+        return 0.0
+    return dot / (norm_a * norm_b)
+
+
+def _summary_similarity(cv_summary: str, jd_summary: str) -> float:
+    """
+    Tính độ tương đồng giữa 2 summary bằng hash embedding (không dùng API).
+    Sử dụng cosine similarity trên vector hash cơ bản.
+    """
+    if not cv_summary or not jd_summary:
+        return 0.0
+    
+    cv_vec = _hash_embedding(cv_summary, dim=256)
+    jd_vec = _hash_embedding(jd_summary, dim=256)
+    return _cosine_similarity(cv_vec, jd_vec)
+
+
+def _embedding_similarity(
+    cv_text: str,
+    jd_text: str,
+    embedding_fn: Optional[Callable[[str], Sequence[float]]] = None,
+    embedding_model: str = "text-embedding-3-small",
+) -> float:
+    """Compute embedding similarity using local hash vectorizer (no API calls)."""
+    try:
+        if embedding_fn is not None:
+            cv_vec = embedding_fn(cv_text)
+            jd_vec = embedding_fn(jd_text)
+            return max(0.0, min(1.0, _cosine_similarity(cv_vec, jd_vec)))
+    except Exception as embedding_error:
+        logger.warning("Custom embedding function failed, using local hash vectorizer: %s", embedding_error)
+
+    # Default: use local hash embedding (no API calls)
+    cv_vec = _hash_embedding(cv_text)
+    jd_vec = _hash_embedding(jd_text)
+    return max(0.0, min(1.0, _cosine_similarity(cv_vec, jd_vec)))
 
 def calculate_matching_score(cv_data: Dict[str, Any], jd_data: Dict[str, Any]) -> float:
     """
@@ -41,6 +177,67 @@ def calculate_matching_score(cv_data: Dict[str, Any], jd_data: Dict[str, Any]) -
         logger.error(f"Lỗi khi tính điểm matching: {e}")
         return 0.0
 
+
+def calculate_matching_score_v2(
+    cv_data: Dict[str, Any],
+    jd_data: Dict[str, Any],
+) -> float:
+    """
+    Matching score version 2:
+    - Keyword matching robust hơn: normalize/synonym/fuzzy coverage.
+    - Hỗ trợ soft-skills nếu JD cung cấp.
+    - Semantic score dựa trên so sánh summary (hash embedding, không gọi API).
+    - Trọng số tự động chuẩn hóa theo thành phần dữ liệu đang có.
+    """
+    try:
+        cv_tech_skills = _normalize_skill_list(cv_data.get("technical_skills", []))
+        cv_soft_skills = _normalize_skill_list(cv_data.get("soft_skills", []))
+
+        jd_req_skills = _normalize_skill_list(jd_data.get("required_skills", []))
+        jd_pref_skills = _normalize_skill_list(jd_data.get("preferred_skills", []))
+        jd_soft_skills = _normalize_skill_list(jd_data.get("soft_skills", []))
+        jd_critical_skills = _normalize_skill_list(jd_data.get("critical_skills", []))
+
+        # 1) Keyword coverage (exact + fuzzy)
+        score_req = _coverage_score(jd_req_skills, cv_tech_skills) if jd_req_skills else 0.0
+        score_pref = _coverage_score(jd_pref_skills, cv_tech_skills) if jd_pref_skills else 0.0
+        score_soft = _coverage_score(jd_soft_skills, cv_soft_skills) if jd_soft_skills else 0.0
+
+        # 2) Summary similarity (local hash embedding, no API cost)
+        cv_summary = str(cv_data.get("summary", "")).strip()
+        jd_summary = str(jd_data.get("summary", "")).strip()
+        score_semantic = _summary_similarity(cv_summary, jd_summary)
+
+        # 3) Dynamic weighted blending
+        # Base weights: req 45%, pref 15%, soft 10%, semantic 30%.
+        components = {
+            "req": (score_req, 0.45, bool(jd_req_skills)),
+            "pref": (score_pref, 0.15, bool(jd_pref_skills)),
+            "soft": (score_soft, 0.10, bool(jd_soft_skills)),
+            "semantic": (score_semantic, 0.30, bool(cv_summary) and bool(jd_summary)),
+        }
+
+        active = {k: v for k, v in components.items() if v[2]}
+        if not active:
+            return 0.0
+
+        total_weight = sum(v[1] for v in active.values())
+        blended_score = sum((score * weight) for score, weight, _ in active.values()) / total_weight
+
+        # 4) Penalty for missing critical skills (if JD provides them)
+        if jd_critical_skills:
+            critical_score = _coverage_score(jd_critical_skills, cv_tech_skills, threshold=0.65)
+            missing_ratio = max(0.0, 1.0 - critical_score)
+            # Penalize up to 30% when critical skills are largely missing.
+            blended_score *= 1.0 - (0.30 * missing_ratio)
+
+        return round(max(0.0, min(1.0, blended_score)) * 100, 2)
+
+    except Exception as e:
+        logger.error(f"Lỗi khi tính điểm matching v2: {e}")
+        return 0.0
+
+
 def rank_candidates(candidates: List[Dict[str, Any]], jd_data: Dict[str, Any]) -> List[Dict[str, Any]]:
     """
     Xếp hạng danh sách ứng viên dựa trên điểm matching với JD.
@@ -74,5 +271,5 @@ if __name__ == "__main__":
         "preferred_skills": ["Docker", "Kubernetes"]
     }
     
-    score = calculate_matching_score(mock_cv, mock_jd)
+    score = calculate_matching_score_v2(mock_cv, mock_jd)
     print(f"Test Matching Score: {score}%")
