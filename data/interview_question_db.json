@@ -1,0 +1,64 @@
+{
+  "organization": "VinUniversity",
+
+  "roles": [
+
+    {
+      "role_id": "vinuni_giang_vien_cs",
+      "ten_role": "Giảng viên Khoa học Máy tính",
+
+      "questions": [
+
+        { "id": "CS_01", "cau_hoi": "Hãy giải thích neural network cho sinh viên năm nhất.", "loai": "teaching" },
+        { "id": "CS_02", "cau_hoi": "Bạn thiết kế syllabus Machine Learning 12 tuần như thế nào?", "loai": "teaching" },
+        { "id": "CS_03", "cau_hoi": "Hướng nghiên cứu của bạn là gì?", "loai": "research" },
+
+        { "id": "CS_CUL_01", "cau_hoi": "Hãy kể về một lần bạn chủ động làm vượt yêu cầu công việc để cải thiện chất lượng giảng dạy.", "loai": "culture_fit" },
+        { "id": "CS_CUL_02", "cau_hoi": "Bạn làm thế nào để duy trì tiêu chuẩn cao trong giảng dạy dù workload lớn?", "loai": "culture_fit" },
+        { "id": "CS_CUL_03", "cau_hoi": "Khi deadline research và giảng dạy chồng chéo, bạn xử lý như thế nào?", "loai": "culture_fit" },
+        { "id": "CS_CUL_04", "cau_hoi": "Bạn đã từng nhận feedback tiêu cực từ sinh viên chưa? Bạn xử lý ra sao?", "loai": "culture_fit" },
+        { "id": "CS_CUL_05", "cau_hoi": "Bạn làm gì để đảm bảo sinh viên thực sự hiểu bài chứ không chỉ pass môn?", "loai": "culture_fit" }
+
+      ]
+    },
+
+    {
+      "role_id": "vinuni_giang_vien_data_science",
+      "ten_role": "Giảng viên Khoa học Dữ liệu",
+
+      "questions": [
+
+        { "id": "DS_01", "cau_hoi": "Hãy giải thích overfitting và underfitting cho người mới.", "loai": "teaching" },
+        { "id": "DS_02", "cau_hoi": "Mô tả một dự án data science bạn đã làm.", "loai": "technical" },
+        { "id": "DS_03", "cau_hoi": "Hướng nghiên cứu của bạn là gì?", "loai": "research" },
+
+        { "id": "DS_CUL_01", "cau_hoi": "Bạn đã từng chủ động cập nhật một công nghệ mới và đưa vào giảng dạy như thế nào?", "loai": "culture_fit" },
+        { "id": "DS_CUL_02", "cau_hoi": "Bạn làm thế nào để đảm bảo bài giảng luôn up-to-date trong lĩnh vực thay đổi nhanh như AI?", "loai": "culture_fit" },
+        { "id": "DS_CUL_03", "cau_hoi": "Khi phải xử lý nhiều deadline (grading, research, teaching), bạn ưu tiên như thế nào?", "loai": "culture_fit" },
+        { "id": "DS_CUL_04", "cau_hoi": "Nếu sinh viên phản ánh bài giảng quá khó hoặc không thực tế, bạn sẽ làm gì?", "loai": "culture_fit" },
+        { "id": "DS_CUL_05", "cau_hoi": "Bạn làm gì để đảm bảo sinh viên có thể apply kiến thức vào thực tế sau khóa học?", "loai": "culture_fit" }
+
+      ]
+    },
+
+    {
+      "role_id": "vinuni_giang_vien_toan",
+      "ten_role": "Giảng viên Toán",
+
+      "questions": [
+
+        { "id": "MATH_01", "cau_hoi": "Hãy giải thích đạo hàm một cách trực quan.", "loai": "teaching" },
+        { "id": "MATH_02", "cau_hoi": "Bạn cân bằng giữa lý thuyết và ứng dụng như thế nào?", "loai": "teaching" },
+        { "id": "MATH_03", "cau_hoi": "Hướng nghiên cứu của bạn là gì?", "loai": "research" },
+
+        { "id": "MATH_CUL_01", "cau_hoi": "Hãy kể về một lần bạn nỗ lực thêm để giúp sinh viên hiểu một concept khó.", "loai": "culture_fit" },
+        { "id": "MATH_CUL_02", "cau_hoi": "Bạn làm thế nào để duy trì chất lượng giảng dạy cao trong thời gian dài?", "loai": "culture_fit" },
+        { "id": "MATH_CUL_03", "cau_hoi": "Khi thời gian chuẩn bị bài hạn chế, bạn vẫn đảm bảo chất lượng như thế nào?", "loai": "culture_fit" },
+        { "id": "MATH_CUL_04", "cau_hoi": "Nếu sinh viên cảm thấy môn Toán quá khó và mất động lực, bạn xử lý ra sao?", "loai": "culture_fit" },
+        { "id": "MATH_CUL_05", "cau_hoi": "Bạn làm gì để đảm bảo sinh viên hiểu bản chất thay vì học thuộc?", "loai": "culture_fit" }
+
+      ]
+    }
+
+  ]
+}
