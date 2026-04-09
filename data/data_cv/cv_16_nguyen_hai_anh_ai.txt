@@ -1,0 +1,59 @@
+HO SO UNG VIEN
+Ho ten: Nguyen Hai Anh
+Email: haianh.nguyen.ai@gmail.com
+So dien thoai: 0908123456
+Vi tri ung tuyen: Giang vien Cao cap AI
+
+Tom tat:
+Ung vien co nen tang nghien cuu va giang day chuyen sau ve AI, Deep Learning va Reinforcement Learning.
+Da huong dan nhieu do an thi giac may tinh va de tai nghien cuu cap cao hoc.
+Mong muon dong gop phat trien chuong trinh AI theo chuan quoc te va dinh huong ung dung.
+
+Kinh nghiem tong: 9 nam
+
+Ky nang ky thuat:
+- Python
+- PyTorch
+- TensorFlow
+- CNN
+- RNN/LSTM
+- Transformers
+- Reinforcement Learning
+- Computer Vision
+- MLOps
+
+Ky nang mem:
+- Su pham dai hoc
+- Huong dan nghien cuu
+- Trinh bay hoc thuat bang tieng Anh
+- Co van khoi nghiep
+
+Kinh nghiem lam viec:
+- Truong Dai hoc Bach Khoa Ha Noi
+  Thoi gian: 2020 - hien tai
+  Vai tro: Giang vien Cao cap AI
+  Mo ta:
+  + Thiet ke va giang day cac hoc phan Deep Learning, RL va Computer Vision nang cao.
+  + Huong dan hon 25 do an tot nghiep lien quan den nhan dien hinh anh va NLP.
+  + Cap nhat de cuong hoc phan theo cac xu huong Transformer va LLM.
+
+- AI Lab, Cong ty VisionNext
+  Thoi gian: 2017 - 2020
+  Vai tro: Research Scientist
+  Mo ta:
+  + Trien khai mo hinh thi giac may tinh cho bai toan kiem dinh chat luong san xuat.
+  + Toi uu mo hinh CNN tren he thong GPU trong moi truong doanh nghiep.
+
+- Trung tam Dao tao AI SmartLearn
+  Thoi gian: 2015 - 2017
+  Vai tro: Giang vien AI
+  Mo ta:
+  + Day Python va Machine Learning cho ky su du lieu.
+
+Hoc van:
+- Tien si Tri tue nhan tao, Dai hoc Quoc gia Ha Noi, 2019
+- Thac si Khoa hoc may tinh, Dai hoc Bach Khoa Ha Noi, 2014
+
+Cong bo khoa hoc:
+- 01 bai bao tai CVPR workshop (2022)
+- 01 bai bao tai ICML workshop (2021)
