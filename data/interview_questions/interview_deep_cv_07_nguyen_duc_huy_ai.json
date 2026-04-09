@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn đã thiết kế và triển khai khóa học nào về NLP hoặc deep learning? Hãy mô tả cách bạn cập nhật nội dung, lựa chọn tài liệu và đánh giá hiệu quả học tập của sinh viên.",
+      "goal": "Kiểm tra khả năng thiết kế chương trình giảng dạy, cập nhật nội dung và đánh giá kết quả học tập.",
+      "related_to": "Điểm mạnh: kinh nghiệm giảng dạy, điểm yếu: thiếu bằng chứng thiết kế và cập nhật chương trình nâng cao."
+    },
+    {
+      "content": "Bạn có kinh nghiệm làm việc với TensorFlow hoặc các kiến trúc CNN/RNN không? Nếu chưa, bạn sẽ tiếp cận và học hỏi như thế nào để áp dụng vào dự án thực tế?",
+      "goal": "Đánh giá phạm vi kỹ thuật, khả năng học hỏi và sẵn sàng mở rộng kiến thức.",
+      "related_to": "Điểm yếu: thiếu kinh nghiệm với CNN, RNN, TensorFlow."
+    },
+    {
+      "content": "Bạn đã công bố bài báo nào trong các hội nghị top như NIPS, ICML, CVPR? Nếu chưa, bạn có kế hoạch nào để nâng cao chất lượng nghiên cứu và xuất bản?",
+      "goal": "Kiểm tra năng lực nghiên cứu, xuất bản và định hướng phát triển học thuật.",
+      "related_to": "Điểm yếu: thiếu xuất bản trong hội nghị top."
+    },
+    {
+      "content": "Bạn thường làm thế nào để thúc đẩy sự hợp tác giữa các phòng ban trong một dự án AI? Hãy kể một ví dụ cụ thể về một dự án đa ngành mà bạn đã tham gia.",
+      "goal": "Đánh giá kỹ năng làm việc nhóm, giao tiếp và phù hợp văn hoá tổ chức.",
+      "related_to": "Điểm mạnh: kỹ năng hợp tác, điểm yếu: chưa có kinh nghiệm thực tiễn trong môi trường công nghiệp."
+    },
+    {
+      "content": "Bạn đã từng tham gia tư vấn cho startup hoặc triển khai dự án AI ở môi trường công nghiệp chưa? Nếu chưa, bạn có ý tưởng hoặc kế hoạch nào để áp dụng kiến thức học thuật vào thực tiễn?",
+      "goal": "Kiểm tra kinh nghiệm thực tiễn, khả năng chuyển giao công nghệ và định hướng phát triển nghề nghiệp.",
+      "related_to": "Điểm yếu: thiếu kinh nghiệm công nghiệp và tư vấn startup."
+    }
+  ]
+}

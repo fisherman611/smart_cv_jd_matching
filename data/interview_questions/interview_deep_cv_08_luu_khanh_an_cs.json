@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn có thể mô tả một dự án lab thực hành mà bạn đã thiết kế cho sinh viên về hệ điều hành hoặc lập trình hệ thống? Bạn đã đánh giá hiệu quả học tập như thế nào và điều gì bạn điều chỉnh dựa trên phản hồi của sinh viên?",
+      "goal": "Kiểm tra khả năng thiết kế bài giảng, đánh giá học tập và điều chỉnh phương pháp giảng dạy.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Trong quá trình giảng dạy và phát triển lab, bạn đã sử dụng Python và Bash để tự động hoá quy trình nào? Bạn có thể chia sẻ một ví dụ cụ thể về cách bạn viết script để hỗ trợ sinh viên thực hiện bài tập?",
+      "goal": "Đánh giá kỹ năng lập trình, tự động hoá và hỗ trợ sinh viên.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn có kinh nghiệm tham gia hoặc hướng dẫn sinh viên thực hiện dự án nghiên cứu nào liên quan đến hệ điều hành hoặc phần cứng? Bạn đã đóng góp gì trong việc viết báo cáo hoặc trình bày tại hội nghị?",
+      "goal": "Xác định kinh nghiệm nghiên cứu, khả năng viết báo cáo và trình bày.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Với yêu cầu của vị trí này, bạn có kế hoạch học tập hoặc dự án nào để nắm vững các công nghệ AI như PyTorch, TensorFlow, hoặc các mô hình CNN/RNN? Bạn đã từng làm việc với dữ liệu lớn hoặc mô hình học sâu chưa?",
+      "goal": "Đánh giá kiến thức AI hiện tại và khả năng học hỏi nhanh.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn thường làm thế nào để duy trì sự cân bằng giữa giảng dạy, nghiên cứu và phát triển bản thân? Bạn có ví dụ về cách bạn đã thích nghi với thay đổi trong chương trình học hoặc công nghệ mới?",
+      "goal": "Kiểm tra tính linh hoạt, khả năng thích ứng và văn hoá làm việc.",
+      "related_to": "điểm mạnh/điểm yếu"
+    }
+  ]
+}

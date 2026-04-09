@@ -1,0 +1,25 @@
+{
+  "job_title": "Giảng viên Cao cấp Trí tuệ Nhân tạo (Senior AI Instructor)",
+  "required_skills": [
+    "Python",
+    "PyTorch/TensorFlow",
+    "CNN",
+    "RNN",
+    "Transformers",
+    "Reading comprehension of technical English documents"
+  ],
+  "preferred_skills": [
+    "Experience implementing AI projects in industry",
+    "Strong pedagogical skills",
+    "Ability to inspire and motivate students",
+    "Publications in reputable conferences/journals (e.g., NIPS, ICML, CVPR)"
+  ],
+  "experience_level": "Senior",
+  "key_responsibilities": [
+    "Design and deliver advanced training programs in AI, Deep Learning, and Reinforcement Learning.",
+    "Guide students in research projects and graduation theses, especially in computer vision.",
+    "Regularly update curricula to reflect the latest industry advancements.",
+    "Participate in scientific research and publish international papers.",
+    "Advise technology startup teams within the university."
+  ]
+}

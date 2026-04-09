@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn có thể mô tả một phương pháp giảng dạy mà bạn đã áp dụng để giúp sinh viên hiểu sâu về kiến trúc hệ thống backend? Hãy chia sẻ ví dụ cụ thể về cách bạn thiết kế bài tập thực hành và đánh giá kết quả.",
+      "goal": "Đánh giá phương pháp giảng dạy, khả năng thiết kế chương trình học và đánh giá sinh viên.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Trong quá trình hướng dẫn sinh viên, bạn đã gặp phải tình huống nào mà sinh viên không nắm bắt được khái niệm quan trọng? Bạn đã xử lý như thế nào và kết quả ra sao?",
+      "goal": "Kiểm tra kỹ năng giải quyết vấn đề, mentoring và phản hồi hiệu quả.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn đã từng triển khai một dự án backend sử dụng Python và một framework web như Django hoặc Flask chưa? Hãy mô tả kiến trúc, các thành phần quan trọng và cách bạn đảm bảo tính mở rộng và bảo mật.",
+      "goal": "Xác định trình độ kỹ thuật thực tiễn trong phát triển backend.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn có ý định nghiên cứu trong lĩnh vực AI không? Nếu có, bạn dự định tập trung vào lĩnh vực nào và làm thế nào để bắt đầu xây dựng một dự án nghiên cứu thực tiễn? Bạn đã từng tham gia viết bài báo khoa học chưa?",
+      "goal": "Đánh giá nhận thức về nghiên cứu, động lực học hỏi và khả năng phát triển trong AI.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Tại sao bạn muốn giảng dạy tại tổ chức chúng tôi, và bạn nghĩ mình có thể đóng góp gì cho cộng đồng sinh viên và đội ngũ giảng viên, đặc biệt là trong việc cập nhật chương trình giảng dạy AI?",
+      "goal": "Xác định sự phù hợp văn hóa, động lực và tầm nhìn phát triển chung.",
+      "related_to": "điểm mạnh/điểm yếu"
+    }
+  ]
+}

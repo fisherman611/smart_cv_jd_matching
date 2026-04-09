@@ -1,43 +1,35 @@
+import json
+import logging
 import os
+import re
 import sys
 from pathlib import Path
+from typing import Any, Optional
+
+from pydantic import BaseModel, ConfigDict, Field
 
 # Thêm project root vào sys.path để tránh lỗi ModuleNotFoundError khi chạy trực tiếp
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-import json
-import logging
-import re
-from pathlib import Path
-from typing import Any, List, Optional
-
-from pydantic import BaseModel, ConfigDict, Field
-
 from src.engine.llm_service import LLMService
 
 logger = logging.getLogger(__name__)
 
-
-class CVAnalysis(BaseModel):
+class DeepAnalysisResult(BaseModel):
     model_config = ConfigDict(extra="ignore")
+    strengths: str = Field(default="", description="Điểm mạnh của ứng viên so với JD")
+    weaknesses: str = Field(default="", description="Điểm yếu hoặc khoảng cách của ứng viên so với JD")
 
-    full_name: str = Field(default="")
-    years_of_experience: float = Field(default=0)
-    technical_skills: List[str] = Field(default_factory=list)
-    soft_skills: List[str] = Field(default_factory=list)
-    education: str = Field(default="")
-    summary: str = Field(default="")
-
-class CVAnalyzer:
+class CandidateDeepAnalyzer:
     def __init__(self, llm_service: Optional[LLMService] = None):
         self.llm_service = llm_service or LLMService()
-        self.prompt_path = Path(__file__).resolve().parents[1] / "prompts" / "cv_analysis_pt.txt"
+        self.prompt_path = Path(__file__).resolve().parents[1] / "prompts" / "candidate_deep_analysis_pt.txt"
 
     def _load_prompt(self):
         if not self.prompt_path.exists():
-            return "Bạn là một chuyên gia tuyển dụng. Hãy phân tích CV sau: {cv_content}"
+            raise FileNotFoundError(f"Prompt file not found at {self.prompt_path}")
         with open(self.prompt_path, "r", encoding="utf-8") as f:
             return f.read()
 
@@ -63,66 +55,48 @@ class CVAnalyzer:
         return None
 
     def _extract_json_object(self, text: str) -> dict[str, Any]:
-        """
-        Cố gắng bóc tách JSON object từ response text (kể cả khi bị bọc markdown).
-        Thử lần lượt từng khối ``` ... ``` (tránh greedy một lần bắt nhầm nhiều block).
-        """
         if not text:
             raise ValueError("LLM response is empty")
-
         cleaned = text.strip()
-
-        # Mỗi fence ``` ... ``` thử parse riêng (ưu tiên khối đầu tiên parse được)
         for m in re.finditer(r"```(?:json)?\s*([\s\S]*?)\s*```", cleaned):
             block = m.group(1)
             parsed = self._try_parse_json_object(block)
             if parsed is not None:
                 return parsed
-
         parsed = self._try_parse_json_object(cleaned)
         if parsed is not None:
             return parsed
-
         raise ValueError("Could not parse JSON object from LLM response")
 
-    def _model_to_dict(self, model_obj: BaseModel) -> dict[str, Any]:
-        if hasattr(model_obj, "model_dump"):
-            return model_obj.model_dump()
-        return model_obj.dict()
-
-    def analyze(self, cv_text: str) -> dict[str, Any]:
+    def analyze(self, cv_analysis: dict, jd_analysis: dict) -> dict[str, Any]:
         """
-        Phân tích nội dung CV thô thành dữ liệu cấu trúc (JSON).
+        Đối chiếu CV và JD để đưa ra phân tích sâu về điểm mạnh và điểm yếu.
         """
-        if not cv_text or not cv_text.strip():
-            raise ValueError("cv_text must not be empty")
-
         # 1. Load prompt template
         template = self._load_prompt()
         
         # 2. Format prompt
-        prompt = template.format(cv_content=cv_text)
+        prompt = template.format(
+            cv_analysis=json.dumps(cv_analysis, ensure_ascii=False, indent=2),
+            jd_analysis=json.dumps(jd_analysis, ensure_ascii=False, indent=2)
+        )
         
-        # 3. Ưu tiên structured output để đảm bảo đúng schema.
+        # 3. Ưu tiên structured output
         try:
             parsed = self.llm_service.get_completion_with_structured_output(
                 prompt=prompt,
-                response_model=CVAnalysis,
+                response_model=DeepAnalysisResult,
             )
-            return CVAnalysis.model_validate(parsed).model_dump()
+            return DeepAnalysisResult.model_validate(parsed).model_dump()
         except Exception as e:
-            logger.warning(
-                "Structured CV output failed (%s); using text completion fallback",
-                e,
-            )
+            logger.warning("Structured Deep Analysis failed (%s); using fallback", e)
 
-        # 4. Fallback: gọi completion thường rồi tự parse/validate.
+        # 4. Fallback
         raw_response = self.llm_service.get_completion(prompt)
         parsed_json = self._extract_json_object(raw_response or "")
-        validated = CVAnalysis.model_validate(parsed_json)
-        return self._model_to_dict(validated)
+        validated = DeepAnalysisResult.model_validate(parsed_json)
+        return validated.model_dump()
 
 if __name__ == "__main__":
-    # Test shortcut
-    analyzer = CVAnalyzer()
-    # print(analyzer.analyze("Nội dung CV giả lập..."))
+    analyzer = CandidateDeepAnalyzer()
+    # Test shortcut logic here if needed

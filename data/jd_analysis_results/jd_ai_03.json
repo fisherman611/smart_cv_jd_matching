@@ -1,0 +1,19 @@
+{
+  "job_title": "Giảng viên Chuyên gia về Thị giác Máy tính",
+  "required_skills": [
+    "3+ năm kinh nghiệm trong lĩnh vực Thị giác máy tính",
+    "Thành thạo OpenCV",
+    "Thành thạo C++ hoặc Python",
+    "Hiểu biết sâu về các kiến trúc YOLO, ResNet, ViT"
+  ],
+  "preferred_skills": [
+    "Kỹ năng tiếng Anh (IELTS 6.5+)",
+    "Kinh nghiệm thực hiện các dự án Edge AI"
+  ],
+  "experience_level": "Middle",
+  "key_responsibilities": [
+    "Giảng dạy chuyên đề Image Processing, Object Detection và Generative AI (Stable Diffusion/GANs)",
+    "Phát triển các bộ dữ liệu mẫu phục vụ giảng dạy",
+    "Kết nối doanh nghiệp để tạo cơ hội thực tập cho sinh viên"
+  ]
+}

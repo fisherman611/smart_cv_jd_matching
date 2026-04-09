@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn có thể mô tả cách bạn sẽ thiết kế một khóa học 'Giáo dục Máy tính nâng cao' kết hợp các khái niệm toán học tiên tiến với các ứng dụng thực tiễn trong trí tuệ nhân tạo? Hãy nêu các mục tiêu học tập, cấu trúc bài giảng, và phương pháp đánh giá.",
+      "goal": "Đánh giá khả năng thiết kế chương trình giảng dạy, phương pháp truyền đạt kiến thức và cách tích hợp toán học với AI.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn đã từng sử dụng Python và các framework như PyTorch hoặc TensorFlow chưa? Nếu chưa, bạn dự định học và áp dụng chúng vào giảng dạy và nghiên cứu như thế nào? Hãy chia sẻ kế hoạch học tập cụ thể.",
+      "goal": "Kiểm tra trình độ kỹ thuật hiện tại và khả năng tự học, phát triển kỹ năng lập trình AI.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn có ý tưởng nghiên cứu nào kết hợp mô hình toán học ứng dụng với các thuật toán học sâu (deep learning) không? Nếu có, hãy mô tả đề tài, phương pháp, và cách bạn sẽ triển khai và công bố kết quả.",
+      "goal": "Đánh giá tầm nhìn nghiên cứu, khả năng thiết kế dự án AI và kế hoạch xuất bản.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Trong môi trường giáo dục hiện đại, làm việc với các chuyên gia từ các lĩnh vực khác nhau là điều thường xuyên. Bạn đã từng hợp tác với các nhà nghiên cứu trong lĩnh vực AI hoặc công nghệ chưa? Nếu chưa, bạn sẽ tiếp cận và xây dựng mối quan hệ như thế nào để hỗ trợ giảng dạy và nghiên cứu của mình?",
+      "goal": "Đánh giá khả năng hợp tác, thích ứng với môi trường đa ngành và xây dựng mạng lưới chuyên môn.",
+      "related_to": "điểm mạnh, điểm yếu"
+    },
+    {
+      "content": "Dưới đây là một đoạn trích ngắn từ một bài báo AI (đính kèm). Bạn hãy đọc và tóm tắt ngắn gọn nội dung chính, những điểm mạnh và hạn chế của nghiên cứu, và đề xuất một câu hỏi nghiên cứu tiếp theo. (đoạn trích được cung cấp trong cuộc phỏng vấn).",
+      "goal": "Kiểm tra khả năng đọc hiểu tài liệu kỹ thuật bằng tiếng Anh và khả năng phân tích nội dung nghiên cứu.",
+      "related_to": "điểm yếu"
+    }
+  ]
+}

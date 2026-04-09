@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn đã thiết kế và triển khai chương trình học nào cho sinh viên khối kỹ thuật và kinh tế trong 5 năm qua? Hãy mô tả quy trình từ việc xác định mục tiêu học tập, lên kế hoạch giảng dạy, đến đánh giá kết quả học tập. Bạn đã áp dụng những phương pháp học tập tích cực nào và làm thế nào để điều chỉnh chúng khi gặp phản hồi tiêu cực từ sinh viên?",
+      "goal": "Đánh giá khả năng thiết kế chương trình giảng dạy, sử dụng phương pháp học tập tích cực và phản hồi sinh viên.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn có kinh nghiệm sử dụng Python trong giảng dạy hoặc nghiên cứu chưa? Nếu chưa, bạn dự định học và áp dụng Python, PyTorch/TensorFlow vào giảng dạy AI như thế nào? Hãy chia sẻ một kế hoạch học tập cụ thể trong 6 tháng tới.",
+      "goal": "Kiểm tra mức độ sẵn sàng học hỏi, khả năng tự học và kế hoạch học tập thực tiễn.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Nếu được giao nhiệm vụ thiết kế một dự án nghiên cứu AI cho sinh viên, bạn sẽ chọn đề tài nào và làm thế nào để triển khai từ giai đoạn lập luận, thu thập dữ liệu, xây dựng mô hình, đến viết báo cáo và công bố? Bạn dự định hợp tác với đâu là nguồn lực bên ngoài (đối tác công nghiệp, viện nghiên cứu) để tăng tính ứng dụng?",
+      "goal": "Đánh giá khả năng lập kế hoạch nghiên cứu, khả năng kết nối với cộng đồng và triển khai dự án thực tiễn.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Tại sao bạn muốn giảng dạy tại một tổ chức có nền tảng công nghệ cao và có mối quan hệ với các công ty công nghệ lớn? Bạn đã từng làm việc trong môi trường đa ngành hoặc hợp tác với các chuyên gia công nghệ chưa? Nếu có, hãy chia sẻ ví dụ cụ thể.",
+      "goal": "Xác định mức độ phù hợp với văn hoá tổ chức và khả năng làm việc trong môi trường đa ngành.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn thường xuyên đọc tài liệu kỹ thuật tiếng Anh nào để cập nhật kiến thức? Khi gặp một bài báo chuyên sâu về deep learning, bạn sẽ làm gì để hiểu nhanh nội dung và áp dụng vào giảng dạy? Hãy mô tả quy trình đọc và ghi chú của bạn.",
+      "goal": "Đánh giá khả năng đọc hiểu tài liệu tiếng Anh chuyên ngành và phương pháp tiếp cận học tập.",
+      "related_to": "điểm yếu"
+    }
+  ]
+}

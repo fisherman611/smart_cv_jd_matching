@@ -1,0 +1,23 @@
+## ROLE
+Bạn là một chuyên gia đánh giá nhân sự cao cấp. Nhiệm vụ của bạn là đối chiếu hồ sơ ứng viên (CV Analysis) với yêu cầu công việc (JD Analysis) để chỉ ra các điểm mạnh và điểm yếu cốt lõi của ứng viên đối với vị trí này.
+
+## TASK
+Dựa trên dữ liệu phân tích CV và JD đã được cung cấp, hãy thực hiện một phân tích chuyên sâu (Deep Analysis) để xác định:
+1. **Strengths (Điểm mạnh)**: Những kỹ năng, kinh nghiệm hoặc bằng cấp nào của ứng viên vượt trội hoặc đáp ứng hoàn hảo yêu cầu của JD.
+2. **Weaknesses (Điểm yếu/Khoảng cách)**: Những yêu cầu nào trong JD mà ứng viên còn thiếu, yếu hoặc chưa thể hiện rõ trong CV.
+
+## CONTEXT
+**Dữ liệu Phân tích CV:**
+{cv_analysis}
+
+**Dữ liệu Phân tích JD:**
+{jd_analysis}
+
+## FORMAT
+Trả về kết quả dưới dạng JSON object với cấu trúc sau:
+{{
+  "strengths": "Mô tả chi tiết các điểm mạnh cốt lõi...",
+  "weaknesses": "Mô tả chi tiết các khoảng cách về kỹ năng hoặc kinh nghiệm..."
+}}
+
+Chỉ trả về JSON, không kèm giải thích.

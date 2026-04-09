@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn đã thiết kế và triển khai chương trình đào tạo nâng cao về Deep Learning cho sinh viên chưa? Hãy mô tả quy trình từ lập kế hoạch, lựa chọn nội dung, phương pháp giảng dạy, đánh giá kết quả và phản hồi từ sinh viên.",
+      "goal": "Đánh giá khả năng thiết kế chương trình giảng dạy, phương pháp giảng dạy, đánh giá học sinh.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn có kinh nghiệm triển khai mô hình CNN/RNN/Transformer trong dự án thực tế nào? Nếu chưa, bạn sẽ làm gì để nhanh chóng nắm bắt và áp dụng?",
+      "goal": "Kiểm tra kiến thức chuyên sâu về các mô hình hiện đại và khả năng học hỏi nhanh.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn có kế hoạch nghiên cứu nào trong lĩnh vực computer vision hoặc reinforcement learning? Bạn dự định xuất bản ở đâu và làm thế nào để kết nối với cộng đồng nghiên cứu?",
+      "goal": "Đánh giá kế hoạch nghiên cứu, khả năng xuất bản và kết nối cộng đồng.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn thường làm việc trong môi trường đa ngành và đa văn hoá như thế nào? Hãy chia sẻ một tình huống khi bạn phải giải quyết xung đột trong nhóm và kết quả đạt được.",
+      "goal": "Đánh giá kỹ năng làm việc nhóm, giải quyết xung đột và hòa nhập văn hoá.",
+      "related_to": "điểm mạnh/điểm yếu"
+    },
+    {
+      "content": "Bạn đã từng tư vấn cho startup công nghệ hay làm việc với doanh nghiệp trong lĩnh vực AI chưa? Nếu chưa, bạn có kế hoạch như thế nào để xây dựng mối quan hệ này?",
+      "goal": "Kiểm tra kinh nghiệm thực tiễn trong ngành công nghiệp và khả năng xây dựng mối quan hệ.",
+      "related_to": "điểm yếu"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn có thể mô tả một ví dụ cụ thể về cách bạn đã thiết kế một bài giảng hoặc bài tập để giúp sinh viên hiểu sâu về cấu trúc dữ liệu phức tạp? Bạn đã đánh giá hiệu quả như thế nào?",
+      "goal": "Kiểm tra khả năng thiết kế giảng dạy, đánh giá và cải tiến nội dung học tập.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Trong quá trình giảng dạy, bạn đã gặp phải tình huống sinh viên không nắm bắt được khái niệm nào? Bạn đã xử lý như thế nào và kết quả ra sao?",
+      "goal": "Đánh giá kỹ năng giao tiếp, giải quyết vấn đề và hỗ trợ học sinh.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn có kinh nghiệm triển khai mô hình học sâu (deep learning) bằng PyTorch hoặc TensorFlow không? Nếu chưa, bạn dự định học và áp dụng công nghệ nào để đáp ứng yêu cầu giảng dạy AI?",
+      "goal": "Kiểm tra kiến thức AI hiện tại và khả năng học hỏi nhanh.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn đã từng tham gia hoặc hướng dẫn một dự án nghiên cứu nào? Nếu chưa, bạn có kế hoạch nào để tham gia vào nghiên cứu AI tại trường?",
+      "goal": "Đánh giá kinh nghiệm nghiên cứu và động lực phát triển nghiên cứu.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn thường xuyên đọc tài liệu kỹ thuật tiếng Anh nào? Bạn có thể chia sẻ một ví dụ về cách bạn đã áp dụng kiến thức từ một bài báo tiếng Anh vào giảng dạy?",
+      "goal": "Kiểm tra khả năng đọc hiểu tài liệu tiếng Anh và ứng dụng vào thực tiễn.",
+      "related_to": "điểm yếu"
+    }
+  ]
+}

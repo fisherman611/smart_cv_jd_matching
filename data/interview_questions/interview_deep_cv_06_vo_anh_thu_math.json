@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn có thể mô tả một ví dụ cụ thể về cách bạn đã thiết kế một chương trình giảng dạy cho môn Toán cao cấp, bao gồm cách bạn xây dựng tài liệu, bài tập và đánh giá? Làm thế nào bạn điều chỉnh nội dung khi nhận thấy sinh viên gặp khó khăn?",
+      "goal": "Đánh giá khả năng thiết kế curriculum, xây dựng tài liệu, thiết lập đánh giá và điều chỉnh giảng dạy dựa trên phản hồi của sinh viên.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Trong quá trình giảng dạy, bạn đã sử dụng công nghệ nào để tăng cường tương tác và hiệu quả học tập? Bạn có thể chia sẻ một trường hợp thành công và những khó khăn gặp phải?",
+      "goal": "Kiểm tra kỹ năng tích hợp công nghệ vào lớp học, khả năng giao tiếp và giải quyết vấn đề.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn có thể giải thích một thuật toán học máy cơ bản (ví dụ: hồi quy tuyến tính) và cách triển khai nó trong Python? Bạn đã từng thử nghiệm với thư viện như scikit-learn chưa?",
+      "goal": "Đánh giá kiến thức cơ bản về AI, khả năng lập trình Python và sử dụng thư viện ML.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn có kế hoạch hoặc ý tưởng nào để thực hiện một dự án nghiên cứu trong lĩnh vực Trí tuệ Nhân tạo? Bạn dự định sẽ làm thế nào để tìm nguồn tài liệu, hợp tác và viết bài báo?",
+      "goal": "Xác định tư duy nghiên cứu, khả năng lập kế hoạch, tìm kiếm tài liệu và hợp tác trong lĩnh vực AI.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn làm thế nào để duy trì sự cân bằng giữa công việc giảng dạy, nghiên cứu và phát triển bản thân? Bạn có ví dụ về cách bạn đã học một kỹ năng mới trong thời gian ngắn?",
+      "goal": "Đánh giá khả năng tự học, quản lý thời gian và thích ứng với môi trường làm việc đa nhiệm.",
+      "related_to": "điểm mạnh và điểm yếu"
+    }
+  ]
+}

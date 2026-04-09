@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn có thể mô tả một ví dụ về dự án capstone mà bạn đã thiết kế, bao gồm mục tiêu học tập, các công nghệ được sử dụng, và cách bạn kết nối với các doanh nghiệp thực tế? Làm thế nào bạn đánh giá thành công của dự án này?",
+      "goal": "Kiểm tra khả năng thiết kế chương trình giảng dạy, tổ chức dự án và kết nối với ngành công nghiệp.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Trong dự án Machine Learning gần đây nhất của bạn, bạn đã sử dụng framework nào để triển khai mô hình CNN? Nếu chưa, bạn sẽ chọn PyTorch hay TensorFlow và làm thế nào để triển khai một mô hình CNN đơn giản cho bài toán phân loại ảnh?",
+      "goal": "Đánh giá kiến thức về các framework deep learning và khả năng triển khai mô hình CNN.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn có bất kỳ bài báo khoa học nào đã được công bố tại các hội nghị quốc tế như NIPS, ICML, CVPR? Nếu chưa, bạn có kế hoạch nào để tham gia vào quá trình nghiên cứu và xuất bản? Bạn sẽ chọn đề tài nào và phương pháp nghiên cứu như thế nào?",
+      "goal": "Xác định kinh nghiệm nghiên cứu, khả năng xuất bản và định hướng nghiên cứu tương lai.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Hãy chia sẻ một trải nghiệm khi bạn hợp tác với một doanh nghiệp để triển khai giải pháp AI. Bạn đã làm gì để đảm bảo nhu cầu của doanh nghiệp được đáp ứng đồng thời vẫn giữ được chất lượng học thuật?",
+      "goal": "Đánh giá khả năng làm việc với đối tác công nghiệp và phù hợp với văn hoá tổ chức.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn có thể tóm tắt ngắn gọn nội dung của một bài báo nghiên cứu gần đây (được viết bằng tiếng Anh) về Transformer trong Computer Vision? Bạn sẽ làm gì để áp dụng những phát hiện đó vào khóa học của mình?",
+      "goal": "Kiểm tra khả năng đọc hiểu tài liệu tiếng Anh và khả năng chuyển đổi kiến thức mới vào giảng dạy.",
+      "related_to": "điểm yếu"
+    }
+  ]
+}

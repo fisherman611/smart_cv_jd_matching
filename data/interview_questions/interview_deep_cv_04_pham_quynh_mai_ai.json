@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "content": "Bạn có thể mô tả một ví dụ cụ thể về cách bạn đã thiết kế và triển khai một khóa học dựa trên dự án AI trong lĩnh vực kinh doanh hoặc y tế, bao gồm cách bạn xây dựng nội dung, lựa chọn công cụ và đánh giá kết quả học tập của sinh viên?",
+      "goal": "Kiểm tra khả năng thiết kế chương trình giảng dạy dựa trên dự án, tích hợp kiến thức chuyên môn và kỹ năng thực hành, đồng thời đánh giá hiệu quả học tập.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Trong CV của bạn chưa có kinh nghiệm với PyTorch, CNN, RNN hoặc Transformers. Bạn có kế hoạch nào để nhanh chóng nắm vững những công nghệ này và áp dụng vào giảng dạy hoặc nghiên cứu? Bạn đã từng học một công nghệ mới chưa? Hãy chia sẻ quá trình đó.",
+      "goal": "Đánh giá khả năng học hỏi nhanh, sẵn sàng tiếp thu công nghệ mới và áp dụng vào thực tiễn.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn có ý định tham gia công bố bài báo tại các hội nghị quốc tế như NIPS, ICML, CVPR không? Nếu có, bạn dự định làm thế nào để xây dựng một dự án nghiên cứu phù hợp và hợp tác với các đồng nghiệp trong và ngoài trường?",
+      "goal": "Xác định động lực nghiên cứu, khả năng lập kế hoạch và hợp tác trong môi trường học thuật cao cấp.",
+      "related_to": "điểm yếu"
+    },
+    {
+      "content": "Bạn đã làm việc trong môi trường đa ngành và quản lý thời gian hiệu quả. Bạn có thể chia sẻ một tình huống cụ thể khi bạn phải phối hợp với các chuyên gia khác (ví dụ bác sĩ, chuyên gia kinh doanh) để triển khai một dự án AI? Bạn đã giải quyết những thách thức nào?",
+      "goal": "Đánh giá kỹ năng làm việc nhóm, giao tiếp đa ngành và quản lý thời gian trong dự án thực tế.",
+      "related_to": "điểm mạnh"
+    },
+    {
+      "content": "Bạn đã từng hướng dẫn sinh viên xây dựng sản phẩm AI thực tiễn. Bạn có thể kể về một trường hợp khi một sinh viên gặp khó khăn trong quá trình thực hiện dự án? Bạn đã hỗ trợ và truyền cảm hứng như thế nào để họ vượt qua?",
+      "goal": "Kiểm tra kỹ năng mentoring, giao tiếp, và khả năng truyền cảm hứng cho sinh viên.",
+      "related_to": "điểm yếu"
+    }
+  ]
+}
